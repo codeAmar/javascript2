@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lending library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+
+<!-- SEARCH BY AUTHOR DIV -->
+
+    <div id="divsearch">
+      <h1>the library</h1>
+
+      <h2>search for a book by author's name</h2>
+
+      <input id="authorSearch" >
+
+      <button type="button" id="autSearch">search</button>
+
+      <ol id='result'>
+
+      </ol>
+    </div>
+
+
+
+<!-- SEARCH BY TITLE OR GENRE DIV -->
+
+    <div id="divsearchtitle">
+      <h2>Search For A Book By Title Or Genre</h2>
+      <p>search for a book by title or genre</p>
+
+      <input id="titleorgenresearchinput" >
+
+      <button type="button" id="titleSearchbutton">search</button>
+
+      <ol id='titleorgenreresult'>
+
+      </ol>
+    </div>
+
+
+
+<!-- USER BOOK DETAIL SECTION -->
+
+    <div id="bookdetails">
+      <section id="bookdetailsection">
+        <h2>books available in library</h2>
+        <p>Note: The details present here might be outdated. Please look at realtime table for Current Books availability</p>
+        <p>User can perform booking actions here</p>
+        <table id="userbookdetailtable">
+          <tr>
+            <th>AUTHOR</th>
+            <th>TITLE</th>
+            <th>GENRE</th>
+            <th>COPIES</th>
+            <th>BOOK</th>
+            <th>RETURN</th>
+            <th>LATE FINE</th>
+
+          </tr>
+        </table>
+      </section>
+    </div>
+
+
+<div id="realtimetablediv">
+  <section>
+    <h2>realtime book collection</h2>
+    <p>Note: This table shows the current availability in the library</p>
+    <table id="tablelistmine">
+    </table>
+  </section>
+</div>
+
+
+    <div id="reservebookdetails">
+      <section id="bookdetailsection">
+        <h2>Reserve Books Details</h2>
+        <table id="bookdetailtable">
+          <tr>
+            <th>AUTHOR</th>
+            <th>TITLE</th>
+            <th>GENRE</th>
+            <th>COPIES</th>
+            <th>RESERVE</th>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+
+<!-- CREATE USER DIV //////////////////////-->
+
+    <div id="createuserdiv">
+      <h2>Create User</h2>
+      <section id="searchsection">
+        
+        <label for="inputusername">NAME:</label>
+        <input type="text" id="inputusername" name="nameinput">
+
+        <label for="libId">LIBRARY ID:</label>
+        <input type="text" id="libId" name="idinput">
+
+        <button id="usersubmitbutton">Enter</button>
+
+        
+      </section>
+    </div>
+
+
+
+<!-- USER DETAILS DIV///////////////// -->
+
+
+    <div id="userdetails">
+      <section id="userdetailsection">
+        <h2>User account Details and activity</h2>
+        <table id="userdetailtable">
+          <tr>
+            <th>Name</th>
+            <th>Library ID</th>
+            <th>Currently Issued Books</th>
+            <th>Issued Date</th>
+            <th>Return Date</th>
+            <th>LATE FINE</th>
+          </tr>
+        </table>
+        <button id="userinfo">refresh</button>
+      </section>
+    </div>
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <p>wmdd 4820 lending library 2016</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
